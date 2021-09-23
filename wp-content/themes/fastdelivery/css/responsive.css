@@ -1,0 +1,254 @@
+@media (min-width: 1200px) {
+  .font-bold-1 {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .ss-intro__title {
+    font-size: 5.3rem;
+  }
+
+  .font-bold-1 {
+    font-size: 7.5rem;
+  }
+
+  .home-ss__title--type-2 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header__bars-icon {
+    display: block;
+  }
+
+  .menu-main-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #352c62;
+
+    -webkit-transition: all 255ms ease-out;
+    -moz-transition: all 255ms ease-out;
+    transition: all 255ms ease-out;
+  }
+
+  .header__menu.open-nav .menu-main-menu-container {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header__menu-nav li {
+    display: block;
+    text-align: center;
+  }
+
+  .header__menu-nav li a {
+    font-size: 18px;
+    line-height: 2.5;
+    color: #fff;
+  }
+
+  .header__menu-nav li a:hover {
+    color: #49e8c8;
+    text-decoration: underline;
+  }
+
+  .header {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .header__ctn {
+    padding: 5px 0;
+    position: relative;
+  }
+
+  div[class*="header__logo"] img {
+    width: 115px;
+  }
+
+  .header__menu.open-nav .button-close {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-ss .full-screen {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro__preview-app {
+    position: static;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+  }
+
+  .ss-intro__title {
+    font-size: 3.5rem;
+  }
+
+  .ss-intro__content {
+    margin-top: 100px;
+  }
+
+  .home-ss__image--ads,
+  .home-ss__image--ads-2,
+  .home-ss__image--promotion {
+    position: static;
+  }
+
+  .ss-ads-2__row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .home-ss__row--promotion {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bt__license {
+    padding-left: 0;
+  }
+
+  .footer-bt__content {
+    margin-bottom: 25px;
+  }
+
+  .footer-bt__license-icon {
+    text-align: left;
+  }
+
+  .home-ss__content--together {
+    padding-top: 4rem;
+    margin-bottom: 30px;
+  }
+
+  .home-ss__content--promotion {
+    padding-top: 4rem;
+    margin-bottom: 30px;
+  }
+
+  .home-ss__content---ads {
+    /* text-align: right; */
+  }
+
+  .home-ss__image--ads {
+    text-align: right;
+    width: 100%;
+  }
+
+  .home-ss__image--ads img {
+    width: 65%;
+  }
+
+  .home-ss__image--together {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .home-ss__image--together img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .home-ss__image--ads-2 {
+    padding-bottom: 30px;
+  }
+
+  .home-ss__image--promotion {
+    width: 100%;
+  }
+
+  .home-ss__image--promotion img {
+    width: 60%;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .ss-intro__title {
+    font-size: 10.5vw;
+  }
+
+  .font-bold-1 {
+    font-size: 11vw;
+  }
+
+  .home-ss__image--together img {
+    width: 100%;
+  }
+
+  .home-ss__image--promotion img {
+    width: 100%;
+  }
+
+  .home-ss__image--ads-2 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .home-ss__image--ads {
+    width: 100%;
+  }
+
+  .home-ss__image--ads img {
+    width: 100%;
+  }
+
+  .home-ss__desctiption {
+    font-size: 18px;
+  }
+
+  .home-ss__desctiption br {
+    display: none;
+  }
+
+  .home-ss__title--type-2 {
+    font-size: 10vw;
+    margin-bottom: 15px;
+  }
+
+  .home-ss__title--type-2 br {
+    display: none;
+  }
+
+  .footer-top {
+    padding: 50px 0;
+  }
+
+  .footer-top__title {
+    font-size: 11vw;
+    margin-bottom: 15px;
+  }
+
+  .type-btn-1 {
+    font-size: 16px;
+    padding: 10px 2.5rem;
+  }
+
+  .home-ss__content--promotion {
+    margin-bottom: 50px;
+  }
+
+  .home-ss__content--ads,
+  .home-ss__content--ads-2 {
+    margin-bottom: 50px;
+  }
+}
