@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/slick/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/slick/slick-theme.css">
 
+    <!-- fullPage -->
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/vendor/fullPage/css/fullpage.css" />
+
     <?php wp_head() ?>
 </head>
 
@@ -34,7 +37,7 @@
 
     <!-- Navigation -->
     <header>
-        <div class="header">
+        <div class="header <?php echo !is_front_page() ? 'bg-white' : null; ?>">
             <div class="wrapper-og">
                 <div class="header__ctn">
                     <div class="header__logo-wrap">

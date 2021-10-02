@@ -1,22 +1,6 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="wrapper-og">
-        <div class="footer-top">
-            <div class="footer-top__wrap">
-                <div class="footer-top__content">
-                    <h2 class="footer-top__title"><?php the_field('title_recruitment', 'options_footer') ?></h2>
-                    <h5 class="footer-top__subtitle"><?php the_field('sub_title_recruitment', 'options_footer') ?></h5>
-                </div>
-                <div class="footer__apply-buton">
-                    <?php
-                    $button_apply_footer = get_field('button_apply', 'options_footer');
-                    if ($button_apply_footer) :
-                    ?>
-                        <a href="<?php echo $button_apply_footer['url'] ?>" class="type-btn-1"><?php echo $button_apply_footer['title'] ?></a>
-                    <?php endif; ?>
-                </div>
-            </div>
-        </div>
 
         <div class="footer-bt">
             <div class="wrapper-og">
@@ -105,7 +89,9 @@
 <script src="<?php echo get_template_directory_uri() ?>/vendor/jquery/jquery.min.js"></script>
 <!-- <script src="< ?php echo get_template_directory_uri() ?>/vendor/bootstrap/js/bootstrap.min.js"></script> -->
 <script src="<?php echo get_template_directory_uri() ?>/slick/slick.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/js/main.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/vendor/fullPage/fullpage.min.js"></script>
+
+<script type="module" src="<?php echo get_template_directory_uri() ?>/js/main.js"></script>
 <?php wp_footer() ?>
 </body>
 

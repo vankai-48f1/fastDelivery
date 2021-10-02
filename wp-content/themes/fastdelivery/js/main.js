@@ -1,4 +1,9 @@
+// import fullpage from './fullpage.js';
+import slidesBlog from './slide.js';
+slidesBlog();
+
 // logo dark , light 
+
 const transformLogo = document.querySelectorAll(".transform-logo");
 
 const logoDark = document.querySelector('.header__logo-dark');
@@ -10,13 +15,15 @@ const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach(entry => {
 
-            if (!entry.isIntersecting) {
-                if (headerElement.classList.contains('change')) {
-                    headerElement.classList.remove('change')
-                }
-                return
+            if (entry.isIntersecting) {
+                // console.log(entry, true);
+                headerElement.classList.add('change')
+            } else {
+                // console.log(entry, false);
+                headerElement.classList.remove('change')
             }
-            headerElement.classList.add('change')
+
+
         });
     },
     {
@@ -67,7 +74,6 @@ const animateObserver = new IntersectionObserver(entries => {
             let animateName = target.getAttribute('data-animate-name');
 
             visibleAnimate(target, animateName);
-            console.log(animateName);
         }
     },
         {
@@ -88,3 +94,36 @@ function visibleAnimate(elements, animationName) {
 animates.forEach(element => {
     animateObserver.observe(element);
 })
+
+if (widthWindow >= 1024) {
+    new fullpage('#fullPage', {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+        navigation: false,
+        controlArrows: false,
+        anchors: ['intro', 'info1', 'info2', 'driver', 'partner', 'apply'],
+        menu: '#menu-main-menu',
+        licenseKey: 'GPPLv3'
+    });
+}
+
+// smooth scroll 
+if (widthWindow < 1024) {
+    var anchorLinks = document.querySelectorAll('.header__menu-nav > li > a');
+
+    anchorLinks.forEach((anchorLink) => {
+        anchorLink.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            let target = e.target.getAttribute('href');
+            target = target.replace('#', '');
+            let targetId = document.querySelector('section[data-menuanchor="' + target + '"]');
+
+            if (target.trim()) {
+                window.scrollTo({ "behavior": "smooth", "top": targetId.offsetTop });
+            }
+
+        })
+    })
+}

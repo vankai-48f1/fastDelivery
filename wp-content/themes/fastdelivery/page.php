@@ -1,8 +1,8 @@
 <?php get_header() ?>
 <!-- Page Content -->
-  <div class="container">
+  <div class="container space-header">
     
-      <div class="row">
+      <div class="wrapper-og">
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
