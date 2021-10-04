@@ -175,7 +175,7 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="section"  data-menuanchor="apply">
+    <section class="section" data-menuanchor="apply">
         <section>
             <div class="wrapper-og">
                 <div class="recruitment">

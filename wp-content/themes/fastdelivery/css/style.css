@@ -293,7 +293,7 @@ div[class*="header__logo"] img {
   padding: 50px 30px calc(50px + 10vh) 50px;
 }
 
-.page-delivery__header-title--driver {
+.page-delivery__header-content--driver {
   background-image: linear-gradient(to right, #2cc4f9, #49e8c8);
 }
 

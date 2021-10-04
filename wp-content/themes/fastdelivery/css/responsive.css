@@ -98,11 +98,19 @@
   }
 
   .ss-intro__title {
-    font-size: 3.5rem;
+    font-size: calc(1.5rem + 3vw);
+  }
+
+  .home-ss .ss-intro__title {
+    margin-bottom: 15px;
+  }
+
+  .font-bold-1 {
+    font-size: calc(1.5rem + 5vw);
   }
 
   .ss-intro__title br {
-      display: none;
+    display: none;
   }
 
   .ss-intro__content {
@@ -186,38 +194,38 @@
   }
 
   .driver__ss-1-group {
-      flex-direction: column;
-      max-width: 500px;
-      margin: 0 auto;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
   }
-  
+
   .driver__ss-1-item {
-      width: 100%;
-      margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 30px;
   }
-  
+
   .page-delivery__title-type-2 {
-      font-size: calc(1.3rem + 1vw);
+    font-size: calc(1.3rem + 1vw);
   }
 
   .driver__ss-2-group,
   .driver__ss-4-content {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
-  .driver__ss-2-item ,
+  .driver__ss-2-item,
   .driver__ss-4-item {
-      width: 100%;
+    width: 100%;
   }
 
   .driver__ss-2-item--left {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .driver__ss-2-item--right {
-      padding-left: 0;
-      max-width: 600px;
-      margin: 0 auto;
+    padding-left: 0;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .driver__ss-4-left {
@@ -227,14 +235,57 @@
   }
 
   .driver__ss-4-left-ct {
-      max-width: 100%;
+    max-width: 100%;
   }
 
+  .rules__header img {
+    min-height: 30vh;
+  }
+
+  .partner__ss-2-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .partner .page-delivery__title-type-2 {
+    text-align: center;
+  }
+
+  .partner__ss-2-col--left {
+    margin-bottom: 40px;
+  }
+
+  .page-delivery__header-content {
+    padding: 50px 30px calc(50px + 5vh) 50px;
+  }
+
+  .driver__ss-2-thumb img {
+      min-height: calc(200px + 8vh);
+  }
+
+  .driver__ss-4-thumb img {
+    min-height: calc(200px + 10vh);
+  }
 }
 
 @media (max-width: 576px) {
-  .ss-intro__title {
-    font-size: 10.5vw;
+  .rules {
+    margin-bottom: 50px;
+  }
+
+  .rules__header {
+    margin-bottom: 25px;
+  }
+
+  .rules__header img {
+    min-height: 20vh;
+  }
+
+  .space-header {
+    padding-top: 120px;
+  }
+
+  .page-delivery__header-content {
+    padding: 50px 30px calc(50px + 5vh) 30px;
   }
 
   .font-bold-1 {
