@@ -15,6 +15,7 @@ add_image_size('post-small', 250, 200, true);
 // Khai báo menu
 function register_my_menu()
 {
+    register_nav_menu('home-menu', __('Home Menu'));
     register_nav_menu('main-menu', __('Main Menu'));
     register_nav_menu('footer-menu', __('Footer Menu'));
 }

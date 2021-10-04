@@ -24,7 +24,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden !important; */
   -webkit-font-smoothing: antialiased;
 
   font-size: 16px;
@@ -54,6 +54,15 @@ div[class*="header__logo"] img {
   height: auto;
 }
 
+.transform-logo {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-main-menu-container {
+  /* display: none; */
+}
+
 .header__menu-nav li {
   display: inline-block;
 }
@@ -76,10 +85,10 @@ div[class*="header__logo"] img {
 }
 
 /* .transform-logo {
-    height: 50vh;
-    width: 100%;
-    background-color: red;
-} */
+      height: 50vh;
+      width: 100%;
+      background-color: red;
+  } */
 
 .header.change .header__logo-dark {
   display: none;
@@ -253,6 +262,8 @@ div[class*="header__logo"] img {
 }
 
 .recruitment {
+  width: 100%;
+
   padding: 50px 50px 25px 50px;
   margin: 30px 0 10vh;
 
@@ -279,6 +290,19 @@ div[class*="header__logo"] img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.section-final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-final__top {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .space-header {
@@ -309,8 +333,8 @@ div[class*="header__logo"] img {
 }
 
 /* .driver__ss-1 {
-    margin-bottom: 70px;
-} */
+      margin-bottom: 70px;
+  } */
 
 .driver__ss-1-group {
   display: flex;

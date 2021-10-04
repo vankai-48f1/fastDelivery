@@ -20,7 +20,6 @@
     <link href="<?php echo get_template_directory_uri() ?>/css/reset-css.css" rel="stylesheet"> <!-- Reset CSS -->
     <link href="<?php echo get_template_directory_uri() ?>/css/my-custom.css" rel="stylesheet"> <!-- My custom CSS -->
     <link href="<?php echo get_template_directory_uri() ?>/css/style.css" rel="stylesheet"> <!-- Style CSS -->
-    <link href="<?php echo get_template_directory_uri() ?>/css/responsive.css" rel="stylesheet"> <!-- Responsive CSS -->
     <link href="<?php echo get_template_directory_uri() ?>/vendor/Font-Awesome/css/font-awesome.min.css" rel="stylesheet"> <!-- font-awesome 4.7 CSS -->
 
     <!-- slick -->
@@ -28,8 +27,12 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/slick/slick-theme.css">
 
     <!-- fullPage -->
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/vendor/fullPage/css/fullpage.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="< ?php echo get_template_directory_uri() ?>/vendor/fullPage/css/fullpage.css" /> -->
+    <?php if (is_front_page()) : ?>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/vendor/onepage/onepagescroll.css" />
+    <?php endif; ?>
 
+    <link href="<?php echo get_template_directory_uri() ?>/css/responsive.css" rel="stylesheet"> <!-- Responsive CSS -->
     <?php wp_head() ?>
 </head>
 
@@ -70,15 +73,27 @@
 
 
                         <?php
-                        wp_nav_menu(
-                            array(
-                                'theme_location'  => 'main-menu',
-                                'depth'  => 3,
-                                'container'  => 'nav',
-                                'menu_class'  => 'header__menu-nav',
-                            )
-                        );
+                        if (is_front_page()) :
+                            wp_nav_menu(
+                                array(
+                                    'theme_location'  => 'home-menu',
+                                    'depth'  => 3,
+                                    'container'  => 'nav',
+                                    'menu_class'  => 'header__menu-nav',
+                                )
+                            );
+                        else :
+                            wp_nav_menu(
+                                array(
+                                    'theme_location'  => 'main-menu',
+                                    'depth'  => 3,
+                                    'container'  => 'nav',
+                                    'menu_class'  => 'header__menu-nav',
+                                )
+                            );
+                        endif;
                         ?>
+
                     </div>
                 </div>
             </div>

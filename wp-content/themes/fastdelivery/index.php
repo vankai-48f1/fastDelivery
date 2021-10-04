@@ -5,8 +5,8 @@ Template Name: Home Page
 ?>
 <?php get_header() ?>
 
-<div id="fullPage">
-    <section class="home-ss ss-intro section"  data-menuanchor="intro">
+<div id="fullPage" class="scroll-container">
+    <section class="home-ss ss-intro section1" data-menuanchor="intro">
         <div class="full-screen">
             <div class="wrapper-og h-100">
                 <div class="home-ss__row ss-intro__container">
@@ -47,12 +47,12 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="home-ss ss-ads bg-gradient-1 section"  data-menuanchor="intro1">
+    <section class="home-ss ss-ads bg-gradient-1 section2" data-menuanchor="intro1">
         <div class="full-screen">
             <div class="wrapper-og h-100">
                 <div class="home-ss__row ss-ads__row h-100 pss-relative">
                     <!-- <div class="col-lg-7"> -->
-                    <div class="home-ss__content home-ss__content---ads home-ss__pd-top transform-logo">
+                    <div class="home-ss__content home-ss__content---ads home-ss__pd-top">
                         <h2 class="home-ss__title font-bold-1 cl-white mg-bt-1 animate" data-animate-name="fadeInLeft"><?php the_field('title_ss_1') ?></h2>
                         <div class="home-ss__desctiption cl-white animate" data-animate-name="fadeInLeft">
                             <?php
@@ -64,6 +64,9 @@ Template Name: Home Page
                         </div>
                         <a href="<?php echo $button_ss_1['url'] ?>" class="home-ss__see-more type-btn-1 animate" data-animate-name="fadeInLeft"><?php echo $button_ss_1['title'] ?></a>
                     </div>
+
+                    <div class="transform-logo"></div>
+
                     <!-- </div> -->
                     <!-- <div class="col-lg-5 h-100 pss-relative"> -->
                     <div class="home-ss__image home-ss__image--ads">
@@ -80,7 +83,7 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class=" section"  data-menuanchor="info2">
+    <section class="section3" data-menuanchor="info2">
         <div class="bg-gradient-1">
             <div class="full-screen ss-ads-2">
                 <div class="wrapper-og h-100">
@@ -94,7 +97,9 @@ Template Name: Home Page
                             <?php endif; ?>
                         </div>
 
-                        <div class="home-ss__content home-ss__content--ads-2 home-ss__pd-top pss-relative z-index-10 transform-logo">
+                        <div class="transform-logo"></div>
+
+                        <div class="home-ss__content home-ss__content--ads-2 home-ss__pd-top pss-relative z-index-10">
                             <h2 class="home-ss__title font-bold-1 cl-white mg-bt-1 animate" data-animate-name="fadeInRight"><?php the_field('title_ss_2') ?></h2>
                             <div class="home-ss__desctiption cl-white animate" data-animate-name="fadeInRight">
                                 <?php
@@ -112,7 +117,7 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="home-ss section"  data-menuanchor="driver">
+    <section class="home-ss section4" data-menuanchor="driver">
         <div class="full-screen">
             <div class="wrapper-og h-100">
                 <div class="home-ss__row flex-row align-ct h-100">
@@ -145,13 +150,13 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="home-ss home-ss-partner  section"  data-menuanchor="partner">
+    <section class="home-ss home-ss-partner section5" data-menuanchor="partner">
         <div class="full-screen">
             <div class="wrapper-og h-100">
                 <div class="home-ss__row home-ss__row--promotion mdp-flex align-ct h-100 pss-relative">
                     <div class="home-ss__content home-ss__content--promotion">
                         <h2 class="home-ss__title home-ss__title--type-2 cl-white animate" data-animate-name="fadeInLeft"><?php the_field('title_ss_4') ?></h2>
-                        <div class="home-ss__desctiption cl-white animate transform-logo" data-animate-name="fadeInLeft">
+                        <div class="home-ss__desctiption cl-white animate" data-animate-name="fadeInLeft">
                             <?php
                             $description_ss_4 = get_field('description_ss_4');
                             $button_ss_4 = get_field('button_ss_4')
@@ -161,7 +166,7 @@ Template Name: Home Page
                         </div>
                         <a href="<?php echo $button_ss_4['url'] ?>" class="home-ss__see-more home-ss__see-more--partner type-btn-1 animate" data-animate-name="fadeInLeft"><?php echo $button_ss_4['title'] ?></a>
                     </div>
-
+                    <div class="transform-logo"></div>
                     <div class="home-ss__image home-ss__image--promotion h-100">
                         <?php
                         $image_ss_4 = get_field('image_ss_4');
@@ -175,9 +180,9 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="section" data-menuanchor="apply">
-        <section>
-            <div class="wrapper-og">
+    <section class="section6" data-menuanchor="apply">
+        <div class="section-final full-screen">
+            <div class="wrapper-og section-final__top">
                 <div class="recruitment">
                     <div class="recruitment__wrap">
                         <div class="recruitment__content">
@@ -195,9 +200,8 @@ Template Name: Home Page
                     </div>
                 </div>
             </div>
-        </section>
 
-
-        <?php get_footer() ?>
+            <?php get_footer() ?>
+        </div>
     </section>
 </div>
