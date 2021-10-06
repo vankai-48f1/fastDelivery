@@ -28,7 +28,6 @@
 	<!-- Tags -->
 	<?php the_tags() ?>
 	<!-- Related Post -->
-	<?php echo mini_blog_related_post('Bài viết liên quan', 4) ?>
 
 	<!-- Commnets -->
 	<hr>

@@ -90,3 +90,59 @@ function my_acf_op_init()
         ));
     }
 }
+
+// PAGINATION
+
+if (!function_exists('m_paginate')) {
+    function m_paginate()
+    {
+        if (paginate_links() != '') { ?>
+            <div class="pagination-post">
+                <?php
+                global $wp_query;
+                $big = 999999999;
+                echo paginate_links(array(
+                    'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+                    'format' => '?paged=%#%',
+                    'prev_text'    => __('<'),
+                    'next_text'    => __('>'),
+                    'current' => max(1, get_query_var('paged')),
+                    'total' => $wp_query->max_num_pages
+                ));
+                ?>
+            </div>
+        <?php }
+    }
+}
+
+// breadcrumb
+require_once get_template_directory() . '/template-parts/breadcrumbs.php';
+
+
+function get_latest_post($quantity)
+{
+    global $post;
+
+    $latest = array(
+        'post_status' => 'publish',
+        'post_type' => 'post',
+        'showposts' => $quantity,
+        'orderby' => 'date',
+        'order' => 'DESC',
+    );
+    $queryLatest = new WP_Query($latest);
+
+    if ($queryLatest->have_posts()) :
+        echo '<div class="latest-post">';
+        while ($queryLatest->have_posts()) : $queryLatest->the_post();
+            echo '<div class="latest-post__block">
+                        <div class="latest-post__thumb-wrap"><a href="' . get_the_permalink() .'" class="latest-post__thumb">' . get_the_post_thumbnail() . '</a></div>
+                        <a href="' . get_the_permalink() .'" class="latest-post__content">
+                            <h3 class="latest-post__title">' . get_the_title() . '</h3>
+                        </a>
+                    </div>';
+        endwhile;
+        echo '</div>';
+    endif;
+    wp_reset_postdata();
+}

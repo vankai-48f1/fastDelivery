@@ -97,8 +97,6 @@ Template Name: Home Page
                             <?php endif; ?>
                         </div>
 
-                        <div class="transform-logo"></div>
-
                         <div class="home-ss__content home-ss__content--ads-2 home-ss__pd-top pss-relative z-index-10">
                             <h2 class="home-ss__title font-bold-1 cl-white mg-bt-1 animate" data-animate-name="fadeInRight"><?php the_field('title_ss_2') ?></h2>
                             <div class="home-ss__desctiption cl-white animate" data-animate-name="fadeInRight">
@@ -111,6 +109,7 @@ Template Name: Home Page
                             </div>
                             <a href="<?php echo $button_ss_2['url'] ?>" class="home-ss__see-more type-btn-1 animate" data-animate-name="fadeInRight"><?php echo $button_ss_2['title'] ?></a>
                         </div>
+                        <div class="transform-logo"></div>
                     </div>
                 </div>
             </div>

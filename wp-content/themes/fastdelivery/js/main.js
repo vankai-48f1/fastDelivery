@@ -93,32 +93,7 @@ animates.forEach(element => {
     animateObserver.observe(element);
 })
 
-if (widthWindow >= 1024) {
-    // new fullpage('#fullPage', {
-    //     //options here
-    //     autoScrolling: true,
-    //     scrollHorizontally: true,
-    //     navigation: false,
-    //     controlArrows: false,
-    //     anchors: ['intro', 'info1', 'info2', 'driver', 'partner', 'apply'],
-    //     menu: '#menu-main-menu',
-    //     licenseKey: 'GPPLv3'
-    // });
 
-    // new fullScroll({
-    //     mainElement: "fullPage",
-    //     animateTime: 0.7,
-    //     displayDots: false,
-    //     animateFunction: "ease",
-    // });
-
-    onepagescroll('#fullPage', {
-        pagination: false,
-        direction: 'vertical',
-        pageContainer: 'section',
-        infinite: false,
-    })
-}
 
 // smooth scroll 
 
@@ -129,7 +104,7 @@ const containerFullPage = document.querySelector('#fullPage');
 if (widthWindow >= 1024) {
     anchorLinks.forEach((anchorLink) => {
         anchorLink.addEventListener('click', (e) => {
-            e.preventDefault();
+            // e.preventDefault();
 
             let target = e.target.getAttribute('href');
             target = target.replace('#', '');

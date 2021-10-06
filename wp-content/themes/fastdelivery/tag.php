@@ -23,7 +23,6 @@
           <?php endif; ?>
 
           <!-- Pagination -->
-          <?php mini_blog_pagination() ?>
 
         </div>
 

@@ -1,29 +1,40 @@
 <?php get_header() ?>
 <!-- Page Content -->
-<div class="container">
+<div class="space-header">
+    <div class="single">
+        <div class="wrapper-og">
+            <div class="single__breadcrumb"><?php m_breadcrumbs() ?></div>
 
-  <div class="row">
+            <div class="single__container">
 
-    <!-- Blog Entries Column -->
-    <div class="col-md-8">
 
-      <?php if (have_posts()) : ?>
+                <?php if (have_posts()) : ?>
 
-        <?php while (have_posts()) : the_post(); ?>
+                    <?php while (have_posts()) : the_post(); ?>
 
-          <?php get_template_part('template-parts/content-single', get_post_format()); ?>
+                        <h1 class="singe__title"><?php the_title() ?></h1>
+                        <div class="single__row">
+                            <div class="single__col single__col--left">
+                                <div class="single__featured-image">
+                                    <?php the_post_thumbnail() ?>
+                                </div>
 
-        <?php endwhile; ?>
+                                <div class="single__content">
+                                    <?php the_content() ?>
+                                </div>
+                            </div>
+                            <div class="single__col single__col--right">
+                                <?php get_latest_post(6) ?>
+                            </div>
+                        </div>
 
-      <?php endif; ?>
+                    <?php endwhile; ?>
 
+                <?php endif; ?>
+            </div>
+        </div>
     </div>
-
-    <?php get_sidebar() ?>
-
-  </div>
-  <!-- /.row -->
-
 </div>
+
 <!-- /.container -->
 <?php get_footer() ?>
