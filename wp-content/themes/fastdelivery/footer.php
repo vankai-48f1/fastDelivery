@@ -3,7 +3,7 @@
     <div class="wrapper-og">
 
         <div class="footer-bt">
-            <div class="wrapper-og">
+            <div class="">
                 <div class="footer-bt__row">
                     <div class="footer-bt__col footer-bt__col--left">
                         <div class="footer-bt__content">

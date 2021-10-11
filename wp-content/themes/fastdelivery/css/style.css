@@ -942,7 +942,7 @@ div[class*="header__logo"] img {
 }
 
 .footer-bt__license {
-  padding-left: 40px;
+  /* padding-left: 40px; */
   font-size: 14px;
   line-height: 2.7;
   color: #393939;
@@ -969,6 +969,8 @@ div[class*="header__logo"] img {
 
 .footer-bt__col--middle {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-bt__col--right {
