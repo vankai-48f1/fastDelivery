@@ -313,12 +313,12 @@ div[class*="header__logo"] img {
   margin-bottom: 70px;
 }
 
+.page-delivery__header--driver {
+    background-image: linear-gradient(to right, #2cc4f9, #49e8c8);
+  }
+
 .page-delivery__header-content {
   padding: 50px 30px calc(50px + 10vh) 50px;
-}
-
-.page-delivery__header-content--driver {
-  background-image: linear-gradient(to right, #2cc4f9, #49e8c8);
 }
 
 .page-delivery__header-title {
@@ -492,7 +492,7 @@ div[class*="header__logo"] img {
   object-position: center;
 }
 
-.page-delivery__header-content--partner {
+.page-delivery__header--partner {
   background-color: #352c62;
 }
 

@@ -7,7 +7,7 @@ Template Name: Partner
 <!-- Page Content -->
 
 <div class="page-delivery space-header">
-    <div class="page-delivery__header">
+    <div class="page-delivery__header page-delivery__header--partner">
         <div class="wrapper-og">
             <div class="page-delivery__header-content page-delivery__header-content--partner">
                 <h1 class="page-delivery__header-title ss-intro__title"><?php the_field('title_partner') ?></h1>
