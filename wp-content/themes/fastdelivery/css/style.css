@@ -674,13 +674,13 @@ div[class*="header__logo"] img {
   height: auto;
   display: block;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .partner-final__item-text {
   font-family: "SFUClearGothic";
   font-size: 23px;
   color: #fff;
-  text-align: center;
 }
 
 .partner-final__content-item-left,
@@ -692,10 +692,11 @@ div[class*="header__logo"] img {
 
 .partner-final__content-item-left .partner-final__item-text {
   padding-right: 70px;
+  text-align: center;
 }
 
 .partner-final__content-item-right .partner-final__item-text {
-  padding-left: 70px;
+  padding-left: 20%;
 }
 
 /* .partner-final__bottom {
