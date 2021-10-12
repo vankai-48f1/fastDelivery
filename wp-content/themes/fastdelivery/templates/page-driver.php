@@ -23,15 +23,17 @@ Template Name: Driver
 
 
                     <?php
-                     if (have_rows('content_ss_driver_1')) : ; $i = 0;?>
+                    if (have_rows('content_ss_driver_1')) :;
+                        $i = 0; ?>
                         <div class="driver__ss-1-group">
-                            <?php while (have_rows('content_ss_driver_1')) : the_row(); $i++;
+                            <?php while (have_rows('content_ss_driver_1')) : the_row();
+                                $i++;
                                 $ss_1_image = get_sub_field('image');
                                 $ss_1_title = get_sub_field('title');
                                 $ss_1_desc = get_sub_field('description');
 
                             ?>
-                                <div class="driver__ss-1-item driver__ss-1-item--driver text-center driver__ss-1-driver-item-<?php echo $i?>">
+                                <div class="driver__ss-1-item driver__ss-1-item--driver text-center driver__ss-1-driver-item-<?php echo $i ?>">
                                     <div class="driver__ss-1-thumb">
                                         <img src="<?php echo $ss_1_image['url'] ?>" alt="<?php echo $ss_1_image['title'] ?>">
                                     </div>

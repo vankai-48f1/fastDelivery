@@ -33,6 +33,7 @@
                                 $title_info_ft = get_field('title_contact_add_ft', 'options_footer');
 
                                 $address_ft = get_field('address', 'options_footer');
+                                $office_address = get_field('office_address', 'options_footer');
                                 $phone_number_ft = get_field('phone_number', 'options_footer');
                                 $hotline_ft = get_field('hotline', 'options_footer');
                                 $website_link_ft = get_field('website_link', 'options_footer');
@@ -44,6 +45,8 @@
                                 <?php
 
                                 if ($address_ft)        echo '<div class="footer-bt__info-item"><b>Địa chỉ: </b>' . $address_ft . '</div>';
+                                if ($office_address)        echo '<div class="footer-bt__info-item"><b>Địa chỉ văn phòng: </b>' . $office_address . '</div>';
+
                                 ?>
                                 <div class="flex-row">
                                     <?php

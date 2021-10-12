@@ -44,6 +44,180 @@ Template Name: Partner
             </div>
         </section>
 
+        <section class="partner-final">
+
+            <?php $partner_final_1 = get_field('content_pn_final_1'); ?>
+            <div class="partner-final__top">
+                <div class="wrapper-og">
+                    <div class="partner-final__top-content">
+                        <div class="partner-final__top-image">
+                            <?php
+                            if ($partner_final_1['image']) :
+                            ?>
+                                <img src="<?php echo $partner_final_1['image'] ?>" alt="<?php echo $partner_final_1['image'] ?>">
+                            <?php endif; ?>
+                        </div>
+                        <div class="partner-final__top-text">
+                            <?php echo $partner_final_1['text'] ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <?php
+            $partner_final_2 = get_field('content_pn_final_2');
+            $partner_final_3 = get_field('content_pn_final_3');
+            $partner_final_4 = get_field('content_pn_final_4');
+            $partner_final_5 = get_field('content_pn_final_5');
+            $partner_final_6 = get_field('content_pn_final_6');
+            $partner_final_7 = get_field('content_pn_final_7');
+            $partner_final_8 = get_field('content_pn_final_8');
+
+            // var_dump($partner_final_7);
+            ?>
+            <div class="partner-final__content-group">
+                <div class="wrapper-og">
+                    <div class="partner-final__content-row">
+
+                        <!-- left -->
+                        <div class="partner-final__content-col partner-final__content-col--left">
+                            <div class="partner-final__content-item-left partner-final__content-item-left--1">
+                                <div class="partner-final__item-img">
+                                    <?php
+                                    if ($partner_final_2) :
+                                    ?>
+                                        <img src="<?php echo esc_url($partner_final_2['image']) ?>" alt="">
+                                    <?php endif; ?>
+                                </div>
+
+                                <div class="partner-final__item-text">
+                                    <?php echo $partner_final_2['text'] ?>
+                                </div>
+                                <span class="partner-final__line-left partner-line-width-md"></span>
+                            </div>
+
+                            <div class="partner-final__content-item-left partner-final__content-item-left--2">
+                                <div class="partner-final__item-img">
+                                    <?php
+                                    if ($partner_final_3) :
+                                    ?>
+                                        <img src="<?php echo esc_url($partner_final_3['image']) ?>" alt="">
+                                    <?php endif; ?>
+                                </div>
+
+                                <div class="partner-final__item-text">
+                                    <?php echo $partner_final_3['text'] ?>
+                                </div>
+                                <span class="partner-final__line-left partner-line-width-md"></span>
+                            </div>
+
+                            <div class="partner-final__content-item-left partner-final__content-item-left--3">
+                                <div class="partner-final__item-img">
+                                    <?php
+                                    if ($partner_final_4) :
+                                    ?>
+                                        <img src="<?php echo esc_url($partner_final_4['image']) ?>" alt="">
+                                    <?php endif; ?>
+                                </div>
+
+                                <div class="partner-final__item-text">
+                                    <?php echo $partner_final_4['text'] ?>
+                                </div>
+                                <span class="partner-final__line-left partner-line-width-sm"></span>
+                            </div>
+                        </div>
+
+                        <!-- right -->
+                        <div class="partner-final__content-col partner-final__content-col--right">
+                            <div class="partner-final__content-item-right partner-final__content-item-right--1">
+                                <div class="partner-final__item-img">
+                                    <?php
+                                    if ($partner_final_5) :
+                                    ?>
+                                        <img src="<?php echo esc_url($partner_final_5['image']) ?>" alt="">
+                                    <?php endif; ?>
+                                </div>
+                                <div class="partner-final__item-text">
+                                    <?php echo $partner_final_5['text'] ?>
+                                </div>
+                                <span class="partner-final__line-right partner-line-width-lg"></span>
+                            </div>
+
+                            <div class="partner-final__content-item-right partner-final__content-item-right--2">
+                                <div class="partner-final__item-img">
+                                    <?php
+                                    if ($partner_final_6) :
+                                    ?>
+                                        <img src="<?php echo esc_url($partner_final_6['image']) ?>" alt="">
+                                    <?php endif; ?>
+                                </div>
+                                <div class="partner-final__item-text">
+                                    <?php echo $partner_final_6['text'] ?>
+                                </div>
+                                <span class="partner-final__line-right partner-line-width-sm"></span>
+                            </div>
+
+                            <div class="partner-final__content-item-right partner-final__content-item-right--3">
+                                <div class="partner-final__item-img">
+                                    <?php
+                                    if ($partner_final_7) :
+                                    ?>
+                                        <img src="<?php echo esc_url($partner_final_7['image']) ?>" alt="">
+                                    <?php endif; ?>
+                                </div>
+                                <div class="partner-final__item-text">
+                                    <?php echo $partner_final_7['text'] ?>
+                                </div>
+                                <span class="partner-final__line-right partner-line-width-lg"></span>
+                            </div>
+
+                            <div class="partner-final__content-item-right partner-final__content-item-right--4">
+                                <div class="partner-final__item-img">
+                                    <?php
+                                    if ($partner_final_8) :
+                                    ?>
+                                        <img src="<?php echo esc_url($partner_final_8['image']) ?>" alt="">
+                                    <?php endif; ?>
+                                </div>
+                                <div class="partner-final__item-text">
+                                    <?php echo $partner_final_8['text'] ?>
+                                </div>
+                                <span class="partner-final__line-right partner-line-width-lg"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="partner-final__bottom">
+                    <div class="wrapper-og pss-relative">
+                        <div class="partner-final__bottom-content">
+                            <div class="partner-final__bottom-image">
+                                <?php
+                                $partner_final_9 = get_field('content_pn_final_9');
+
+                                if ($partner_final_9['image']) :
+                                ?>
+                                    <img src="<?php echo $partner_final_9['image'] ?>" alt="">
+                                <?php endif; ?>
+                            </div>
+                            <div class="partner-final__bottom-text">
+                                <?php echo $partner_final_9['text'] ?>
+                            </div>
+                        </div>
+
+                        <div class="partner-final__bottom-contact">
+                            <div><?php echo get_field('contact_info')['title'] ?></div>
+                            <div><?php echo get_field('contact_info')['hotline'] ?></div>
+                            <div><?php echo get_field('contact_info')['email'] ?></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
         <section class="partner__ss-2 mg-bt-4">
             <?php $ss_partner_2 = get_field('content_ss_partner_2') ?>
             <div class="wrapper-og">
@@ -65,4 +239,3 @@ Template Name: Partner
 </div>
 <!-- /.container -->
 <?php get_footer() ?>
-
