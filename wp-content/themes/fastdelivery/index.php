@@ -185,15 +185,15 @@ Template Name: Home Page
                 <div class="recruitment">
                     <div class="recruitment__wrap">
                         <div class="recruitment__content">
-                            <h2 class="recruitment__title"><?php the_field('title_recruitment', 'options_footer') ?></h2>
-                            <h5 class="recruitment__subtitle"><?php the_field('sub_title_recruitment', 'options_footer') ?></h5>
+                            <h2 class="recruitment__title"><?php the_field('title_recruitment', $post->ID) ?></h2>
+                            <h5 class="recruitment__subtitle"><?php the_field('sub_title_recruitment') ?></h5>
                         </div>
                         <div class="recruitment__apply-buton">
                             <?php
-                            $button_apply_footer = get_field('button_apply', 'options_footer');
-                            if ($button_apply_footer) :
+                            $button_apply_recruit = get_field('button_apply');
+                            if ($button_apply_recruit) :
                             ?>
-                                <a href="<?php echo $button_apply_footer['url'] ?>" class="type-btn-1"><?php echo $button_apply_footer['title'] ?></a>
+                                <a href="<?php echo $button_apply_recruit['url'] ?>" class="type-btn-1"><?php echo $button_apply_recruit['title'] ?></a>
                             <?php endif; ?>
                         </div>
                     </div>

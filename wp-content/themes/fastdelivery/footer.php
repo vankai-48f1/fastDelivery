@@ -104,7 +104,6 @@
 <!-- <script type="text/javascript" src="< ?php echo get_template_directory_uri() ?>/vendor/fullPage/fullpage.min.js"></script> -->
 
 
-<script type="module" src="<?php echo get_template_directory_uri() ?>/js/main.js"></script>
 
 <?php if (is_front_page()) : ?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/vendor/onepage/onepagescroll.js"></script>
@@ -126,7 +125,7 @@
 
 
 <?php endif; ?>
-
+<script type="module" src="<?php echo get_template_directory_uri() ?>/js/main.js"></script>
 
 <?php wp_footer() ?>
 </body>

@@ -116,6 +116,8 @@ if (widthWindow >= 1024) {
                 Object.assign(containerFullPage.style, {
                     transform: 'translate3d(0,' + -(elementPageIndex - 1) * 100 + '%,0)'
                 });
+                // containerFullPage.trigger( "click" );
+                console.log(containerFullPage);
             }
 
         })

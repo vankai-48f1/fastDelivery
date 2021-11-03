@@ -7,8 +7,8 @@ Template Name: Driver
 <!-- Page Content -->
 
 <div class="page-delivery space-header">
-    <div class="page-delivery__header page-delivery__header--driver">
-        <div class="wrapper-og">
+    <div class="wrapper-og">
+        <div class="page-delivery__header page-delivery__header--driver">
             <div class="page-delivery__header-content page-delivery__header-content--driver">
                 <h1 class="page-delivery__header-title ss-intro__title"><?php the_field('title_driver') ?></h1>
             </div>
