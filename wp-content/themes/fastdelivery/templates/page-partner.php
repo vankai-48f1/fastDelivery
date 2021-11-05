@@ -228,7 +228,7 @@ Template Name: Partner
                         <div class="partner__ss-2-col partner__ss-2-col--left">
                             <?php echo do_shortcode($ss_partner_2['form']); ?>
                         </div>
-                        <div class="partner__ss-2-col--right">
+                        <div class="partner__ss-2-col partner__ss-2-col--right">
                             <img src="<?php echo $ss_partner_2['image']['url']; ?>" alt="">
                         </div>
                     </div>

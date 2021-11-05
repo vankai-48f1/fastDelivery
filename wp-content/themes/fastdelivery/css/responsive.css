@@ -1,3 +1,10 @@
+@media (min-width: 576px) and (max-width: 990px) {
+    .intro__preview-app {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 1200px) {
   .font-bold-1 {
     font-size: 6rem;
@@ -162,6 +169,7 @@
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
+    width: 100%;
   }
 
   .ss-intro__title {
@@ -182,6 +190,10 @@
 
   .ss-intro__content {
     margin-top: 100px;
+  }
+
+  .ss-intro__content {
+      width: 100%;
   }
 
   .home-ss__image--ads,
@@ -310,7 +322,7 @@
   }
 
   .partner__ss-2-grid {
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column; 
   }
 
   .partner .page-delivery__title-type-2 {
@@ -536,10 +548,16 @@
   }
 
   .about-us__header-subtitle {
-      font-size: 21px;
+    font-size: 21px;
   }
 
   .about-us__content-row {
-      margin: 45px 0;
+    margin: 45px 0;
   }
+}
+
+@media screen and (max-width: 480px) { 
+    .partner__ss-2-col--left .delivery-field-50 {
+        width: 100%;
+    }
 }

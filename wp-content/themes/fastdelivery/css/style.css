@@ -143,6 +143,10 @@ div[class*="header__logo"] img {
   align-items: center;
 }
 
+.ss-intro__content {
+  width: 60%;
+}
+
 .ss-intro__title {
   font-family: "Roboto-Bold";
   font-size: 5vw;
@@ -185,6 +189,7 @@ div[class*="header__logo"] img {
 .intro__preview-app {
   position: absolute;
   height: 70%;
+  width: 40%;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -534,14 +539,22 @@ div[class*="header__logo"] img {
 }
 
 .partner__ss-2-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 100px;
+  display: flex;
+  column-gap: 100px;
+  -webkit-column-gap: 100px;
+}
+
+.partner__ss-2-col {
+  flex: 1;
 }
 
 .partner__ss-2-col--left {
   display: flex;
   align-items: center;
+}
+
+.partner__ss-2-col--left .wpcf7 {
+    width: 100%;
 }
 
 .partner__ss-2-col--left form {
@@ -1269,20 +1282,20 @@ div[class*="header__logo"] img {
 }
 
 .bout-us__bottom-col-title {
-    font-family: "Roboto-Bold";
-    font-size: 25px;
-    color: #EB272C;
-    margin-bottom: 10px;
+  font-family: "Roboto-Bold";
+  font-size: 25px;
+  color: #eb272c;
+  margin-bottom: 10px;
 }
 
 .about-us__bottom-title {
-    text-align: center;
-    color: #4EE9CA;
-    margin-bottom: 25px;
+  text-align: center;
+  color: #4ee9ca;
+  margin-bottom: 25px;
 }
 
 .about-us__bottom {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* ---- Footer ---- */

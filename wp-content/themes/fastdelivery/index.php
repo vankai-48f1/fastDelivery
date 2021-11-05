@@ -5,8 +5,8 @@ Template Name: Home Page
 ?>
 <?php get_header() ?>
 
-<div id="fullPage" class="scroll-container">
-    <section class="home-ss ss-intro section1" data-menuanchor="intro">
+<div id="fullPage" class="fullPage scroll-container">
+    <section class="section home-ss ss-intro section1" data-menuanchor="intro">
         <div class="full-screen">
             <div class="wrapper-og h-100">
                 <div class="home-ss__row ss-intro__container">
@@ -47,8 +47,8 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="home-ss ss-ads bg-gradient-1 section2" data-menuanchor="intro1">
-        <div class="full-screen">
+    <section class="section home-ss ss-ads bg-gradient-1 section2" data-menuanchor="intro1">
+        <div class="full-screen transform-logo">
             <div class="wrapper-og h-100">
                 <div class="home-ss__row ss-ads__row h-100 pss-relative">
                     <!-- <div class="col-lg-7"> -->
@@ -65,7 +65,7 @@ Template Name: Home Page
                         <a href="<?php echo $button_ss_1['url'] ?>" class="home-ss__see-more type-btn-1 animate" data-animate-name="fadeInLeft"><?php echo $button_ss_1['title'] ?></a>
                     </div>
 
-                    <div class="transform-logo"></div>
+                    <!-- <div class="transform-logo"></div> -->
 
                     <!-- </div> -->
                     <!-- <div class="col-lg-5 h-100 pss-relative"> -->
@@ -83,7 +83,7 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="section3" data-menuanchor="info2">
+    <section class="section home-ss section3" data-menuanchor="info2">
         <div class="bg-gradient-1">
             <div class="full-screen ss-ads-2">
                 <div class="wrapper-og h-100">
@@ -116,7 +116,7 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="home-ss section4" data-menuanchor="driver">
+    <section class="section home-ss section4" data-menuanchor="driver">
         <div class="full-screen">
             <div class="wrapper-og h-100">
                 <div class="home-ss__row flex-row align-ct h-100">
@@ -149,7 +149,7 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="home-ss home-ss-partner section5" data-menuanchor="partner">
+    <section class="section home-ss home-ss-partner section5" data-menuanchor="partner">
         <div class="full-screen">
             <div class="wrapper-og h-100">
                 <div class="home-ss__row home-ss__row--promotion mdp-flex align-ct h-100 pss-relative">
@@ -179,7 +179,7 @@ Template Name: Home Page
         </div>
     </section>
 
-    <section class="section6" data-menuanchor="apply">
+    <section class="section section6" data-menuanchor="apply">
         <div class="section-final full-screen">
             <div class="wrapper-og section-final__top">
                 <div class="recruitment">
@@ -199,8 +199,8 @@ Template Name: Home Page
                     </div>
                 </div>
             </div>
-
-            <?php get_footer() ?>
+            <?php get_template_part('template-parts/content', 'footer') ?>
         </div>
     </section>
 </div>
+<?php get_footer() ?>

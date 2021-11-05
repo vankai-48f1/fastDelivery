@@ -27,9 +27,9 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/slick/slick-theme.css">
 
     <!-- fullPage -->
-    <!-- <link rel="stylesheet" type="text/css" href="< ?php echo get_template_directory_uri() ?>/vendor/fullPage/css/fullpage.css" /> -->
     <?php if (is_front_page()) : ?>
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/vendor/onepage/onepagescroll.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/vendor/fullPage/fullpage.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="< ?php echo get_template_directory_uri() ?>/vendor/onepage/onepagescroll.css" /> -->
     <?php endif; ?>
 
     <link href="<?php echo get_template_directory_uri() ?>/css/responsive.css" rel="stylesheet"> <!-- Responsive CSS -->
